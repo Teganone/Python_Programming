@@ -1,0 +1,15 @@
+import turtle
+
+colors = ['red','orange','yellow','green','blue','indigo','purple']
+
+len_color = len(colors)
+for i in range(len_color):
+    current_color = colors[i]
+    turtle.color(current_color,current_color)
+    turtle.begin_fill()
+    turtle.right(360/len_color)
+    turtle.circle(50)
+    turtle.end_fill()
+
+turtle.done()
+    
